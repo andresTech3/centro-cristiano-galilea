@@ -1,0 +1,467 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Russo One', sans-serif;
+}
+
+
+/** Menu **/
+
+.contenedor-menu {
+    position: fixed;
+    width: 100%;
+    height: 4vh;
+    background: #09c;
+    border-radius: 10px;
+    z-index: 99999;
+    text-align: center;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cabezera {
+    display: flex;
+}
+
+.img-logo {
+    width: 40px;
+    height: 40px;
+    flex-grow: 8;
+}
+
+.text-pagina {
+    color: #fff;
+    margin-left: 0.5em;
+    margin-top: 0.2em;
+}
+
+.menu-ul {
+    list-style-type: none;
+}
+
+.items-link {
+    display: inline;
+    font-size: center;
+}
+
+.items-link a {
+    position: relative;
+    left: 1px;
+    top: 9px;
+    margin: 17px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #fff;
+}
+
+.items-link a:hover {
+    background-color: rgb(31, 59, 112);
+    padding: 5px;
+    font-size: 18px;
+    transition: 0.4s;
+    border-radius: 15px;
+}
+
+
+/** Presentacion **/
+
+.contenedor-presentacion {
+    width: 100vw;
+    height: 60vh;
+    display: relative;
+    background-image: url(https://images2.alphacoders.com/601/thumb-1920-601078.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+}
+
+.presentacion-items {
+    position: relative;
+    top: 7em;
+    text-align: center;
+    left: 300px;
+}
+
+.presentacion-text {
+    font-size: 50px;
+    padding: 3px;
+    color: #fff;
+}
+
+.presentacion-text:hover {
+    font-size: 60px;
+    transition: 2s;
+}
+
+.presentacion-descripcion {
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.presentacion-logo {
+    position: relative;
+    animation-name: press-logo-items;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.video-press {
+    position: absolute;
+    left: -250px;
+    top: -30px;
+}
+
+.presentacion-icon-redsocial {
+    position: fixed;
+    left: 97%;
+    z-index: 9999;
+    font-size: 2em;
+    animation-name: press-icon-items;
+    animation-duration: 2s;
+}
+
+.presentacion-icon-facebook {
+    display: inline-block;
+    margin-bottom: 0.1em;
+    color: #00303f;
+}
+
+.presentacion-icon-facebook:hover {
+    font-size: 1.3em;
+}
+
+.presentacion-icon-youtube {
+    display: inline-block;
+    color: #f00;
+}
+
+.presentacion-icon-youtube:hover {
+    font-size: 1.3em;
+}
+
+
+/**burbujas animation**/
+
+.burbuja {
+    border-radius: 50%;
+    background: #fff;
+    opacity: .2;
+    position: absolute;
+    bottom: -150;
+    animation: burbujas 3s linear infinite;
+}
+
+.burbuja:nth-child(1) {
+    width: 80px;
+    height: 80px;
+    left: 5%;
+    animation-duration: 3s;
+    animation-delay: 3s;
+}
+
+.burbuja:nth-child(2) {
+    width: 100px;
+    height: 100px;
+    left: 35%;
+    animation-duration: 3s;
+    animation-delay: 5s;
+}
+
+.burbuja:nth-child(3) {
+    width: 20px;
+    height: 20px;
+    left: 15%;
+    animation-duration: 1.5s;
+    animation-delay: 7s;
+}
+
+.burbuja:nth-child(4) {
+    width: 50px;
+    height: 50px;
+    left: 90%;
+    animation-duration: 6s;
+    animation-delay: 3s;
+}
+
+.burbuja:nth-child(5) {
+    width: 70px;
+    height: 70px;
+    left: 65%;
+    animation-duration: 3s;
+    animation-delay: 1s;
+}
+
+.burbuja:nth-child(6) {
+    width: 20px;
+    height: 20px;
+    left: 50%;
+    animation-duration: 4s;
+    animation-delay: 5s;
+}
+
+.burbuja:nth-child(7) {
+    width: 20px;
+    height: 20px;
+    left: 50%;
+    animation-duration: 4s;
+    animation-delay: 5s;
+}
+
+.burbuja:nth-child(8) {
+    width: 100;
+    height: 100px;
+    left: 52%;
+    animation-duration: 5s;
+    animation-delay: 5s;
+}
+
+.burbuja:nth-child(9) {
+    width: 65px;
+    height: 65px;
+    left: 51%;
+    animation-duration: 3s;
+    animation-delay: 2s;
+}
+
+.burbuja:nth-child(10) {
+    width: 40px;
+    height: 40px;
+    left: 35%;
+    animation-duration: 3s;
+    animation-delay: 4s;
+}
+
+@keyframes burbujas {
+    0% {
+        bottom: 0;
+        opacity: 0;
+    }
+    30% {
+        transform: translateX(30px);
+    }
+    50% {
+        opacity: .4;
+    }
+    100% {
+        bottom: 100vh;
+        opacity: 0;
+    }
+}
+
+
+/** conosenos**/
+
+.contenedor-conosenos {
+    position: relative;
+    width: 100vw;
+    height: 50vh;
+    background-image: url(https://fondosmil.com/fondo/23225.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+}
+
+.conosenos-titulo {
+    position: relative;
+    padding-top: 15px;
+    z-index: 9999;
+    text-align: center;
+    color: #fff;
+}
+
+.items-conosenos {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: space-around;
+    color: #fff;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.pastor-conosenos {
+    width: 20em;
+    height: 15em;
+}
+
+.img-pastores-conocenos {
+    background-size: cover;
+    width: 20em;
+    height: 15em;
+}
+
+.pastor-conosenos:hover {
+    font-size: 1.1em;
+    transition: 2s;
+}
+
+.vision-conosenos {
+    width: 25em;
+    height: 15em;
+    background: #27f;
+}
+
+.vision-conosenos:hover {
+    font-size: 1.1em;
+    transition: 2s;
+}
+
+.mision-conosenos {
+    width: 25em;
+    height: 15em;
+    background: #27f;
+}
+
+.mision-conosenos:hover {
+    font-size: 1.1em;
+    transition: 2s;
+}
+
+.text-items {
+    margin-top: 85px;
+}
+
+
+/**GRUPOS DE LA IGLESIA**/
+
+.grupos-cont {
+    width: 100%;
+    height: 50%;
+    background-image: url(https://fondosmil.com/fondo/23225.jpg);
+    padding: 30px 0px;
+    position: relative;
+}
+
+.grupos-est {
+    width: 100%;
+    height: 50%;
+}
+
+.grupos-items {
+    color: #fff;
+    text-align: center;
+}
+
+.grupos-iglesia {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.grup-jovenes {
+    width: 400px;
+    height: 300px;
+    background-image: url(../IMG/jovenes.jpg);
+    background-size: cover;
+}
+
+.grup-damas {
+    width: 400px;
+    height: 300px;
+    background-color: #27f;
+}
+
+.grup-caballeros {
+    width: 400px;
+    height: 300px;
+    background-color: #27f;
+}
+
+.hover-grups:hover {
+    border: 2px solid #25f;
+}
+
+.text-grup {
+    z-index: 99;
+    color: #09c;
+}
+
+
+/*footer*/
+
+.fot-cont {
+    height: auto;
+    background: linear-gradient(to bottom, #07d, #04d);
+}
+
+.fot__item {
+    color: #fff;
+    text-align: center;
+    padding: 50px;
+}
+
+.fot-text {
+    margin-bottom: 20px;
+}
+
+.fot-descrip {
+    margin-bottom: 15px;
+}
+
+.fot-email {
+    height: 30px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+    margin-right: 20px;
+}
+
+.fot-email:hover {
+    color: #fff;
+}
+
+.fot-boton {
+    height: 30px;
+    background: none;
+    color: #fff;
+    border-radius: 20px;
+    border: 2px solid #09f;
+    outline: none;
+}
+
+.fot-boton:hover {
+    background: #09f;
+    color: #fff;
+}
+
+.fot-boton:active {
+    background-color: #23f;
+}
+
+
+/*formulario*/
+
+
+/*animation icons*/
+
+@keyframes press-icon-items {
+    0% {
+        bottom: 500px;
+    }
+    50% {
+        bottom: 15px;
+    }
+    100% {
+        bottom: 500px;
+    }
+}
+
+@keyframes press-logo-items {
+    0% {
+        bottom: 0;
+    }
+    50% {
+        bottom: -100px;
+    }
+    100% {
+        bottom: 0;
+    }
+}

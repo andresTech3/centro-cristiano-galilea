@@ -1,0 +1,40 @@
+/*animation grupos iglesia*/
+
+@keyframes anim-grup-iglesia {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes move {
+    0% {
+        transform: translate(100%);
+    }
+    100% {
+        transform: translate(0px);
+    }
+}
+
+@keyframes move1 {
+    0% {
+        transform: translate(-100%);
+    }
+    100% {
+        transform: translate(0px);
+    }
+}
+
+@keyframes move2 {
+    0% {
+        transform: translate(0 -100%);
+    }
+    100% {
+        transform: translate(0px 0px);
+    }
+}

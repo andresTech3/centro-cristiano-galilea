@@ -1,0 +1,328 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Russo One', sans-serif;
+}
+
+
+/** Menu **/
+
+.contenedor-menu {
+    width: 100%;
+    height: 5vh;
+    background: #09c;
+    border-radius: 10px;
+    position: fixed;
+    z-index: 99999;
+    text-align: center;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cabezera {
+    display: flex;
+}
+
+.img-logo {
+    width: 40px;
+    height: 40px;
+    flex-grow: 8;
+}
+
+.text-pagina {
+    color: #fff;
+    margin-left: 0em;
+    margin-top: 0.2em;
+}
+
+.menu-ul {
+    list-style-type: none;
+}
+
+.items-link {
+    display: inline;
+    font-size: center;
+}
+
+.items-link a {
+    position: relative;
+    left: 1px;
+    top: 9px;
+    margin: 17px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #fff;
+}
+
+.items-link a:hover {
+    background-color: rgb(31, 59, 112);
+    padding: 5px;
+    font-size: 18px;
+    transition: 0.4s;
+    border-radius: 15px;
+}
+
+
+/** Presentacion **/
+
+.contenedor-presentacion {
+    width: 100vw;
+    height: 60vh;
+    display: relative;
+    background-image: url(https://a-static.besthdwallpaper.com/salon-de-clases-papel-pintado-3840x2400-24807_9.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+}
+
+.presentacion-items {
+    position: relative;
+    top: 7em;
+    text-align: center;
+}
+
+.presentacion-text {
+    font-size: 50px;
+    padding: 3px;
+    color: #37f;
+}
+
+.presentacion-text:hover {
+    font-size: 60px;
+    transition: 2s;
+}
+
+.presentacion-descripcion {
+    margin-bottom: 20px;
+    color: #37f;
+}
+
+.presentacion-logo {
+    position: relative;
+    animation-name: press-logo-items;
+    animation-duration: 5s;
+}
+
+.presentacion-icon-redsocial {
+    position: fixed;
+    left: 97%;
+    z-index: 9999;
+    font-size: 2em;
+    animation-name: press-icon-items;
+    animation-duration: 2s;
+}
+
+.presentacion-icon-facebook {
+    display: inline-block;
+    margin-bottom: 0.1em;
+    color: #09c;
+}
+
+.presentacion-icon-facebook:hover {
+    font-size: 1.3em;
+}
+
+.presentacion-icon-youtube {
+    display: inline-block;
+    color: #f00;
+}
+
+.presentacion-icon-youtube:hover {
+    font-size: 1.3em;
+}
+
+
+/**burbujas animation **/
+
+.burbuja {
+    border-radius: 50%;
+    background: #fff;
+    opacity: .2;
+    position: absolute;
+    bottom: -150;
+    animation: burbujas 3s linear infinite;
+}
+
+.burbuja:nth-child(1) {
+    width: 80px;
+    height: 80px;
+    left: 5%;
+    animation-duration: 3s;
+    animation-delay: 3s;
+}
+
+.burbuja:nth-child(2) {
+    width: 100px;
+    height: 100px;
+    left: 35%;
+    animation-duration: 3s;
+    animation-delay: 5s;
+}
+
+.burbuja:nth-child(3) {
+    width: 20px;
+    height: 20px;
+    left: 15%;
+    animation-duration: 1.5s;
+    animation-delay: 7s;
+}
+
+.burbuja:nth-child(4) {
+    width: 50px;
+    height: 50px;
+    left: 90%;
+    animation-duration: 6s;
+    animation-delay: 3s;
+}
+
+.burbuja:nth-child(5) {
+    width: 70px;
+    height: 70px;
+    left: 65%;
+    animation-duration: 3s;
+    animation-delay: 1s;
+}
+
+.burbuja:nth-child(6) {
+    width: 20px;
+    height: 20px;
+    left: 50%;
+    animation-duration: 4s;
+    animation-delay: 5s;
+}
+
+.burbuja:nth-child(7) {
+    width: 20px;
+    height: 20px;
+    left: 50%;
+    animation-duration: 4s;
+    animation-delay: 5s;
+}
+
+.burbuja:nth-child(8) {
+    width: 100;
+    height: 100px;
+    left: 52%;
+    animation-duration: 5s;
+    animation-delay: 5s;
+}
+
+.burbuja:nth-child(9) {
+    width: 65px;
+    height: 65px;
+    left: 51%;
+    animation-duration: 3s;
+    animation-delay: 2s;
+}
+
+.burbuja:nth-child(10) {
+    width: 40px;
+    height: 40px;
+    left: 35%;
+    animation-duration: 3s;
+    animation-delay: 4s;
+}
+
+@keyframes burbujas {
+    0% {
+        bottom: 0;
+        opacity: 0;
+    }
+    30% {
+        transform: translateX(30px);
+    }
+    50% {
+        opacity: .4;
+    }
+    100% {
+        bottom: 100vh;
+        opacity: 0;
+    }
+}
+
+
+/**clases disipulado**/
+
+.text-clases {
+    position: relative;
+    display: block;
+    padding-left: 34%;
+    color: #fff;
+    background: linear-gradient(to left, #37f, #54f);
+}
+
+.cont-discipulado {
+    flex-wrap: wrap;
+    background: linear-gradient(to left, #37f, #54f);
+    width: 100%;
+    height: 50%;
+}
+
+.item-discipulado {
+    display: flex;
+    text-align: center;
+}
+
+.contenedor-img {
+    margin-top: 90px;
+    color: #fff;
+}
+
+.text-discipulado {
+    flex-grow: 2;
+}
+
+.descrip-discipulado {
+    margin-top: 50px;
+    margin-bottom: 30PX;
+}
+
+.btn-discipulado {
+    font-size: 20px;
+    background-color: #00303f;
+    font-family: fantasy;
+    outline: none;
+    border: none;
+    color: #fff;
+    width: 300px;
+}
+
+.btn-discipulado:hover {
+    background-color: #a9294f;
+}
+
+
+/*clases de musica*/
+
+.hr-separador {
+    height: 5px;
+}
+
+.img-music {
+    width: 600px;
+    height: 360px;
+    order: 2;
+}
+
+.cont-img-music {
+    order: 1;
+}
+
+
+/*clases de cdi*/
+
+.img-cdi {
+    order: 1;
+    width: 600px;
+    background-color: #fff;
+}
+
+.cont-img-cdi {
+    order: 2;
+}

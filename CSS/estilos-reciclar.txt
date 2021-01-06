@@ -1,0 +1,78 @@
+/**servicios**/
+
+
+/**
+
+.contenedor-servicios {
+    position: relative;
+    width: 100vw;
+    height: 70vh;
+    background-image: url(https://image.freepik.com/foto-gratis/hermoso-cielo-degradado-color-blanco-azul_50039-321.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+}
+
+.texto-contenedor {
+    position: relative;
+    top: 1em;
+    text-align: center;
+    color: #fff;
+}
+
+.texto-contenedor:hover {
+    font-size: 2em;
+    transition: 2s;
+}
+
+.elemento-servicios {
+    position: relative;
+    top: 1em;
+    color: #fff;
+    margin-left: 5em;
+}
+
+.items-servicios-jueves {
+    display: inline-block;
+    width: 15em;
+    height: 15em;
+    background: rgba(0, 0, 0, 0.336);
+    margin-left: 10em;
+    margin-top: 5em;
+}
+
+.items-servicios-jueves:hover {
+    font-size: 1.1em;
+    margin-left: -1.1em;
+    transition: 2s;
+}
+
+.items-servicios-sabado {
+    display: inline-block;
+    width: 15em;
+    height: 15em;
+    background: rgba(0, 0, 0, 0.336);
+    margin-left: 10em;
+    margin-top: 5em;
+}
+
+.items-servicios-sabado:hover {
+    width: 20em;
+    height: 20em;
+    transition: 2s;
+}
+
+.items-servicios-domingo {
+    display: inline-block;
+    width: 15em;
+    height: 15em;
+    background: rgba(0, 0, 0, 0.336);
+    margin-left: 10em;
+    margin-top: 5em;
+}
+
+.items-servicios-domingo:hover {
+    font-size: 1.2em;
+    transition: 2s;
+}
+
+**/

@@ -1,0 +1,23 @@
+<!--si se va a utilizar servivo-->
+
+    <!--servicios-->
+    <!--<section class="servicios">
+        <div class="contenedor-servicios">
+            <h2 class="texto-contenedor">SERVICIOS SEMANALES</h2>
+            <div class="elemento-servicios">
+                <div class="items-servicios-jueves">
+                    <p>Levantando el altar familiar</p>
+                </div>
+
+                <div class="items-servicios-sabado">
+                    <p>Jovenes punta de lanza</p>
+                </div>
+
+                <div class="items-servicios-domingo">
+                    <p>Escuela dominical</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+-->

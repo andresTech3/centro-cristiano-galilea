@@ -1,0 +1,261 @@
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    
+    body {
+        overflow-x: hidden;
+        font-family: 'Russo One', sans-serif;
+        background: linear-gradient(to bottom, #11698e, #19456b);
+    }
+    /** Menu **/
+    
+    .contenedor-menu {
+        width: 100%;
+        height: 4vh;
+        background: #09c;
+        border-radius: 10px;
+        position: fixed;
+        z-index: 99999;
+        text-align: center;
+    }
+    
+    .menu-items {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .cabezera {
+        display: flex;
+    }
+    
+    .img-logo {
+        width: 40px;
+        height: 40px;
+        flex-grow: 8;
+    }
+    
+    .text-pagina {
+        color: #fff;
+        margin-top: 0.2em;
+    }
+    
+    .menu-ul {
+        list-style-type: none;
+    }
+    
+    .items-link {
+        display: inline;
+        font-size: center;
+    }
+    
+    .items-link a {
+        position: relative;
+        left: 1px;
+        top: 9px;
+        margin: 17px;
+        text-decoration: none;
+        font-size: 14px;
+        color: #fff;
+    }
+    
+    .items-link a:hover {
+        background-color: rgb(31, 59, 112);
+        padding: 5px;
+        font-size: 18px;
+        transition: 0.4s;
+        border-radius: 15px;
+    }
+    /** Presentacion **/
+    
+    .contenedor-presentacion {
+        width: 100%;
+        height: 100vh;
+        display: relative;
+    }
+    
+    .video-press {
+        position: relative;
+        height: auto;
+        overflow: hidden;
+        left: 100px;
+        margin-top: 100px;
+        border-radius: 2%;
+        background-size: contain;
+    }
+    /**burbujas animation **/
+    
+    .burbuja {
+        border-radius: 50%;
+        background: #fff;
+        opacity: .2;
+        position: absolute;
+        bottom: -150;
+        animation: burbujas 3s linear infinite;
+    }
+    
+    .burbuja:nth-child(1) {
+        width: 80px;
+        height: 80px;
+        left: 5%;
+        animation-duration: 3s;
+        animation-delay: 3s;
+    }
+    
+    .burbuja:nth-child(2) {
+        width: 100px;
+        height: 100px;
+        left: 35%;
+        animation-duration: 3s;
+        animation-delay: 5s;
+    }
+    
+    .burbuja:nth-child(3) {
+        width: 20px;
+        height: 20px;
+        left: 15%;
+        animation-duration: 1.5s;
+        animation-delay: 7s;
+    }
+    
+    .burbuja:nth-child(4) {
+        width: 50px;
+        height: 50px;
+        left: 90%;
+        animation-duration: 6s;
+        animation-delay: 3s;
+    }
+    
+    .burbuja:nth-child(5) {
+        width: 70px;
+        height: 70px;
+        left: 65%;
+        animation-duration: 3s;
+        animation-delay: 1s;
+    }
+    
+    .burbuja:nth-child(6) {
+        width: 20px;
+        height: 20px;
+        left: 50%;
+        animation-duration: 4s;
+        animation-delay: 5s;
+    }
+    
+    .burbuja:nth-child(7) {
+        width: 20px;
+        height: 20px;
+        left: 50%;
+        animation-duration: 4s;
+        animation-delay: 5s;
+    }
+    
+    .burbuja:nth-child(8) {
+        width: 100;
+        height: 100px;
+        left: 52%;
+        animation-duration: 5s;
+        animation-delay: 5s;
+    }
+    
+    .burbuja:nth-child(9) {
+        width: 65px;
+        height: 65px;
+        left: 51%;
+        animation-duration: 3s;
+        animation-delay: 2s;
+    }
+    
+    .burbuja:nth-child(10) {
+        width: 40px;
+        height: 40px;
+        left: 35%;
+        animation-duration: 3s;
+        animation-delay: 4s;
+    }
+    
+    @keyframes burbujas {
+        0% {
+            bottom: 0;
+            opacity: 0;
+        }
+        30% {
+            transform: translateX(30px);
+        }
+        50% {
+            opacity: .4;
+        }
+        100% {
+            bottom: 100vh;
+            opacity: 0;
+        }
+    }
+    /* una palabra para ti*/
+    
+    .contenedor-presentacion {
+        width: 100%;
+        height: 100vh;
+        padding: 20px;
+    }
+    
+    .text-principal {
+        text-align: center;
+        margin-top: 80px;
+        color: #fff;
+        font-size: 50px;
+    }
+    
+    .presentacion-items-block {
+        position: relative;
+        width: 80%;
+        height: auto;
+        margin: auto;
+        top: -50px;
+        left: -30px;
+    }
+    
+    .video-press {
+        position: absolute;
+        width: 85%;
+        height: 77vh;
+    }
+    /*info*/
+    
+    .descrip-info {
+        text-align: center;
+        color: #fff;
+    }
+    
+    .link-face i {
+        position: relative;
+        left: 48%;
+        font-size: 40px;
+        color: #09c;
+    }
+    
+    .link-you i {
+        position: relative;
+        left: 49%;
+        font-size: 40px;
+        color: #c21;
+    }
+    /* enseñanzas*/
+    
+    .cont-ense {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+    
+    .text-ense {
+        color: #f42;
+        margin-top: 25px;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+    
+    .item-ense {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
