@@ -21,7 +21,7 @@ anim(".anim-caballero", "anim-grup-iglesia 3s");
 
 
 // musica | adoracion
-anim(".anim-adoracion", "move 2s");
+anim(".anim-adoracion", "move1 2s");
 
 // musica |alabanza
 anim(".anim-alabanza", "move 2s");
