@@ -1,7 +1,8 @@
 <?php
+
     $email = $_POST['correo'];
 
-    if($email === ' ' || $email === '$'|| $email === '%'|| $email === '/'|| $email === '!'){
+    if($email === '' ){
         echo json_encode('Error');
     }
     else{
