@@ -1,5 +1,8 @@
 var form = document.getElementById('fot-form');
 
+
+
+//evento
 form.addEventListener("submit", function(e) {
     e.preventDefault();
     var datos = new FormData(form)
@@ -20,9 +23,8 @@ form.addEventListener("submit", function(e) {
                 </form>`
             } else {
                 form.style.color = "#0f9";
-                form.innerHTML = dato;
+                form.innerHTML = datos;
             }
 
         })
-
 })

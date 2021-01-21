@@ -6,6 +6,7 @@
 body {
     overflow-x: hidden;
     font-family: 'Russo One', sans-serif;
+    box-sizing: border-box;
 }
 
 
@@ -16,7 +17,7 @@ body {
     width: 100%;
     height: 4vh;
     background: #09c;
-    border-radius: 10px;
+    border-radius: 2px;
     z-index: 99999;
     text-align: center;
 }
@@ -260,10 +261,11 @@ body {
 .contenedor-conosenos {
     position: relative;
     width: 100vw;
-    height: 50vh;
+    height: auto;
     background-image: url(https://fondosmil.com/fondo/23225.jpg);
     background-repeat: no-repeat;
     background-size: 100vw 100vh;
+    padding-bottom: 50px;
 }
 
 .conosenos-titulo {
@@ -285,14 +287,16 @@ body {
 }
 
 .pastor-conosenos {
+    position: relative;
     width: 20em;
-    height: 15em;
+    height: auto;
+    margin: 20px;
 }
 
 .img-pastores-conocenos {
     background-size: cover;
     width: 20em;
-    height: 15em;
+    height: auto;
 }
 
 .pastor-conosenos:hover {
@@ -301,9 +305,11 @@ body {
 }
 
 .vision-conosenos {
+    position: relative;
     width: 25em;
-    height: 15em;
+    height: auto;
     background: #27f;
+    margin: 20px;
 }
 
 .vision-conosenos:hover {
@@ -313,8 +319,9 @@ body {
 
 .mision-conosenos {
     width: 25em;
-    height: 15em;
+    height: auto;
     background: #27f;
+    margin: 20px;
 }
 
 .mision-conosenos:hover {
@@ -323,18 +330,18 @@ body {
 }
 
 .text-items {
-    margin-top: 85px;
+    margin-top: 25px;
 }
 
 
 /**GRUPOS DE LA IGLESIA**/
 
 .grupos-cont {
+    position: relative;
     width: 100%;
-    height: 50%;
+    height: auto;
     background-image: url(https://fondosmil.com/fondo/23225.jpg);
     padding: 30px 0px;
-    position: relative;
 }
 
 .grupos-est {
@@ -359,22 +366,25 @@ body {
     height: 300px;
     background-image: url(../IMG/jovenes.jpg);
     background-size: cover;
+    margin: 20px;
 }
 
 .grup-damas {
     width: 400px;
     height: 300px;
     background-color: #27f;
+    margin: 20px;
 }
 
 .grup-caballeros {
     width: 400px;
     height: 300px;
     background-color: #27f;
+    margin: 20px;
 }
 
 .hover-grups:hover {
-    border: 2px solid #25f;
+    box-shadow: 0px 0px 20px 0px #2fc;
 }
 
 .text-grup {
@@ -460,5 +470,24 @@ body {
     }
     100% {
         bottom: 0;
+    }
+}
+
+
+/*media query*/
+
+@media only screen and (max-width: 1420px) {
+    /*grupo iglesia*/
+    .video-press {
+        display: none;
+    }
+    .presentacion-items {
+        left: 0px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .presentacion-icon-redsocial {
+        left: 92%;
     }
 }
