@@ -500,11 +500,20 @@ body {
 }
 
 @media only screen and (max-width: 800px) {
+    body {
+        overflow-x: hidden;
+    }
     /* redes sociales */
     .presentacion-icon-redsocial {
-        left: 92%;
+        left: 0px;
+    }
+    .presentacion-icon-facebook {
+        display: block;
     }
     /*menu*/
+    .presentacion-text {
+        font-size: 40px;
+    }
     .contenedor-menu {
         display: none;
     }
