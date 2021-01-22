@@ -494,6 +494,9 @@ body {
     .presentacion-items {
         left: 0px;
     }
+    .presentacion-logo {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 800px) {
