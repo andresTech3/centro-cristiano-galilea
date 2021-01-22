@@ -31,3 +31,20 @@ anim(".anim-move-musica", "move1 2s");
 
 // clases | clase-cdi
 anim(".move-anim", "move 2s")
+
+
+
+//menu
+
+let bar = document.querySelector(".bar");
+let contenedor = document.querySelector('.cont-menureducido');
+let lista = document.querySelector('.items-menu');
+
+bar.addEventListener('click', (e) => {
+    e.preventDefault();
+    contenedor.classList.toggle('menuBarCambio');
+    setTimeout(() => {
+        lista.classList.toggle('lista-link-cambio');
+    }, 800)
+
+})
