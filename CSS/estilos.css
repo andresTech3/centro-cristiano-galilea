@@ -494,9 +494,6 @@ body {
     .presentacion-items {
         left: 0px;
     }
-    .presentacion-logo {
-        display: none;
-    }
 }
 
 @media only screen and (max-width: 800px) {
@@ -511,9 +508,6 @@ body {
         display: block;
     }
     /*menu*/
-    .presentacion-text {
-        font-size: 40px;
-    }
     .contenedor-menu {
         display: none;
     }
@@ -560,5 +554,14 @@ body {
     .fot-boton {
         width: 100%;
         border-radius: 10px;
+    }
+}
+
+@media only screen and (max-height: 736px) {
+    .presentacion-logo {
+        display: none;
+    }
+    .presentacion-text {
+        font-size: 40px;
     }
 }
