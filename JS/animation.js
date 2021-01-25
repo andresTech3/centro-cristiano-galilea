@@ -46,5 +46,4 @@ bar.addEventListener('click', (e) => {
     setTimeout(() => {
         lista.classList.toggle('lista-link-cambio');
     }, 800)
-
 })
